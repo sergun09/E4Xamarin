@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zoo_E4.Vues.Soins.AddSoinsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ajouter Soins" FontSize="24" HorizontalOptions="Center"/>
+            <Editor x:Name="EditorDescriptif" MaxLength="1000" Placeholder="Descriptif du Soins" AutoSize="TextChanges"/>
+            <Label Text="Date du Soins" FontSize="15" HorizontalOptions="Center"/>
+            <DatePicker DateSelected="DatePickerSoins_DateSelected" />
+            <Label Text="Poids" FontSize="15" HorizontalOptions="Center"/>
+            <Entry x:Name="EntryPoids" Placeholder="Poids de l'animal"/>
+            <Button Text="Ajouter" Clicked="ButtonAddSoins_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

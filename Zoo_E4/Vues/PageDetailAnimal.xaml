@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zoo_E4.Vues.PageDetailAnimal">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblDetail" FontSize="24" HorizontalOptions="Center"/>
+            <Entry x:Name="EntryNomAnimal" Placeholder="Nom Animal" />
+            <Label Text="Sexe" FontSize="15" HorizontalOptions="Center"/>
+            <Entry x:Name="EntrySexe" Placeholder="M ou F"/>
+            <Label Text="Espece" FontSize="15" HorizontalOptions="Center"/>
+            <Picker x:Name="EspecePicker" ItemDisplayBinding="{Binding Nom}" SelectedIndexChanged="EspecePicker_SelectedIndexChanged"/>
+            <Label Text="Enclos" FontSize="15" HorizontalOptions="Center"/>
+            <Picker x:Name="EnclosPicker" ItemDisplayBinding="{Binding Nom}" SelectedIndexChanged="EnclosPicker_SelectedIndexChanged"/>
+            <Label Text="Date d'arrivée" FontSize="15" HorizontalOptions="Center"/>
+            <DatePicker x:Name="DatePickerArrivee" DateSelected="DatePickerArrivee_DateSelected"/>
+            <Label Text="Date de départ" FontSize="15" HorizontalOptions="Center"/>
+            <DatePicker x:Name="DatePickerDepart" DateSelected="DateDepart_DateSelected"/>
+
+            <Button Text="Mettre à jour les données" Clicked="ButtonUpdate_Clicked" BackgroundColor="YellowGreen"/>
+            <Button Text="Supprimer" Clicked="ButtonDelete_Clicked" BackgroundColor="Red"/>
+            <Button Text="Liste des Soins" BackgroundColor="#3BDA2E" Clicked="ButtonListeSoins_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

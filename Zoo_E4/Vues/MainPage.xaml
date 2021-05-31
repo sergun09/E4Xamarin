@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zoo_E4.Vues.MainPage">
+
+    <StackLayout BackgroundColor="#65F865">
+        <Entry x:Name="loginEntry" Placeholder="Login" HorizontalTextAlignment="Center" Margin="30,150,50,20"/>
+        <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" HorizontalTextAlignment="Center" Margin="30, 50,50,20"/>
+        <Button Margin="50,30" Text="Connexion" Clicked="Button_Clicked"/>
+        <Label x:Name="lblError" FontSize="21" Text="Login ou mot de passe incorrect" IsVisible="false" BackgroundColor="Red"/>
+    </StackLayout>
+
+</ContentPage>
